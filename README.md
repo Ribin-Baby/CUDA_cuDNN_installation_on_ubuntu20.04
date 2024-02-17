@@ -111,7 +111,7 @@
 ##### [](https://onnxruntime.ai/docs/install/#install-onnx-runtime-cpu)INSTALL ONNX RUNTIME CPU
 
 ```
-pip install onnxruntime
+pip install onnxruntime==1.15.0
 
 ```
 
@@ -120,7 +120,7 @@ pip install onnxruntime
 The default CUDA version for ORT is 11.8
 
 ```
-pip install onnxruntime-gpu
+pip install onnxruntime-gpu==1.16.3
 
 ```
 
