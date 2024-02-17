@@ -26,7 +26,7 @@
 	```
 *  install other import packages
 
-`>> sudo apt install g++ freeglut3-dev build-essential libx11-dev 	libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev`
+   `>> sudo apt install g++ freeglut3-dev build-essential libx11-dev 	libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev`
 
 *  first get the PPA repository driver
 	```sh
