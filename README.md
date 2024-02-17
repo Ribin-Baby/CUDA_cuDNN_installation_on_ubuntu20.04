@@ -11,7 +11,9 @@
 	
 * to verify your gpu is cuda enable check
 
-  `>> lspci | grep -i nvidia`
+  ```sh
+  >> lspci | grep -i nvidia
+  ```
 * If you have previous installation remove it first.
 	```sh
 	>> sudo apt purge nvidia* -y
@@ -26,7 +28,9 @@
 	```
 *  install other import packages
 
-   `>> sudo apt install g++ freeglut3-dev build-essential libx11-dev 	libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev`
+   ```sh
+   >> sudo apt install g++ freeglut3-dev build-essential libx11-dev 	libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
+   ```
 
 *  first get the PPA repository driver
 	```sh
@@ -39,20 +43,22 @@
 	>> sudo apt install nvidia-utils-525-server nvidia-driver-525-server
 	```
 *  verify that the nvidia driver installation is successful if error occurs reboot the system and try again this command
-	`>> nvidia-smi`
+	```sh
+	>> nvidia-smi
+	```
 * install CUDA toolkit
 	```sh
 	>> wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
 	
-  >> sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+  	>> sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
   
-  >> wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda-repo-ubuntu2004-11-8-local_11.8.0-520.61.05-1_amd64.deb
+  	>> wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda-repo-ubuntu2004-11-8-local_11.8.0-520.61.05-1_amd64.deb
   
-  >> sudo dpkg -i cuda-repo-ubuntu2004-11-8-local_11.8.0-520.61.05-1_amd64.deb
+  	>> sudo dpkg -i cuda-repo-ubuntu2004-11-8-local_11.8.0-520.61.05-1_amd64.deb
   
-  >> sudo cp /var/cuda-repo-ubuntu2004-11-8-local/cuda-*-keyring.gpg /usr/share/keyrings/
+  	>> sudo cp /var/cuda-repo-ubuntu2004-11-8-local/cuda-*-keyring.gpg /usr/share/keyrings/
   
-  ### Update and upgrade
+  	### Update and upgrade
 
 	>> sudo apt update && sudo apt upgrade -y
 
@@ -61,7 +67,7 @@
 	>> sudo apt install cuda-11-8 -y
 	```
 *  setup your env paths variables
-	```
+	```sh
 	>> echo 'export PATH=/usr/local/cuda-11.8/bin:$PATH' >> ~/.bashrc
 
 	>> echo 'export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
