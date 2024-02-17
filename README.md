@@ -10,6 +10,7 @@
 	4. verify the installation
 	
 * to verify your gpu is cuda enable check
+
   `>> lspci | grep -i nvidia`
 * If you have previous installation remove it first.
 	```sh
@@ -24,7 +25,8 @@
 	>> sudo rm -rf /usr/local/cuda*
 	```
 *  install other import packages
-  `>> sudo apt install g++ freeglut3-dev build-essential libx11-dev 	libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev`
+
+`>> sudo apt install g++ freeglut3-dev build-essential libx11-dev 	libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev`
 
 *  first get the PPA repository driver
 	```sh
